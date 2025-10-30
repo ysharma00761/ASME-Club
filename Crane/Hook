@@ -144,7 +144,7 @@ void loop() {
       // Step the motor 4 steps
       if (!hookZeroPosition) {
         Serial.print("HOOK: "); Serial.println(hookDir);
-        rotStepper.step(hookDir * stepsPerRevolution / 50);
+        hookStepper.step(hookDir * stepsPerRevolution / 50);
       }
 
       disarmCheck();
